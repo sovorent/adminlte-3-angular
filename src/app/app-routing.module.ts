@@ -13,6 +13,7 @@ import {RecoverPasswordComponent} from '@modules/recover-password/recover-passwo
 import {PrivacyPolicyComponent} from '@modules/privacy-policy/privacy-policy.component';
 import {MainMenuComponent} from '@pages/main-menu/main-menu.component';
 import {SubMenuComponent} from '@pages/main-menu/sub-menu/sub-menu.component';
+import {ConfigComponent} from '@pages/config/config.component';
 
 const routes: Routes = [
     {
@@ -24,6 +25,10 @@ const routes: Routes = [
             {
                 path: 'profile',
                 component: ProfileComponent
+            },
+            {
+                path: 'config',
+                component: ConfigComponent
             },
             {
                 path: 'blank',

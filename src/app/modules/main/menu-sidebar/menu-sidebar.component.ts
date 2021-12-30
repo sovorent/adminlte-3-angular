@@ -23,6 +23,10 @@ export const MENU = [
         path: ['/']
     },
     {
+        name: 'Config',
+        path: ['/config']
+    },
+    {
         name: 'Blank',
         path: ['/blank']
     },

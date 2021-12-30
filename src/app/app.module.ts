@@ -32,6 +32,11 @@ import {SubMenuComponent} from './pages/main-menu/sub-menu/sub-menu.component';
 import {MenuItemComponent} from './components/menu-item/menu-item.component';
 import {DropdownComponent} from './components/dropdown/dropdown.component';
 import {DropdownMenuComponent} from './components/dropdown/dropdown-menu/dropdown-menu.component';
+import { ConfigComponent } from './pages/config/config.component';
+
+import { TableModule } from 'primeng/table'
+import { InputTextModule } from 'primeng/inputtext'
+import { ButtonModule } from 'primeng/button'
 
 registerLocaleData(localeEn, 'en-EN');
 
@@ -59,7 +64,8 @@ registerLocaleData(localeEn, 'en-EN');
         SubMenuComponent,
         MenuItemComponent,
         DropdownComponent,
-        DropdownMenuComponent
+        DropdownMenuComponent,
+        ConfigComponent
     ],
     imports: [
         BrowserModule,
@@ -67,6 +73,9 @@ registerLocaleData(localeEn, 'en-EN');
         AppRoutingModule,
         ReactiveFormsModule,
         BrowserAnimationsModule,
+        TableModule,
+        InputTextModule,
+        ButtonModule,
         ToastrModule.forRoot({
             timeOut: 3000,
             positionClass: 'toast-top-right',
